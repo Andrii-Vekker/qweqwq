@@ -531,10 +531,6 @@ a {
   height: 20px;
   fill: var(--secondary-title-font-color);
 }
-.subscribe-main {
-  padding-top: 72px;
-  padding-bottom: 94px;
-}
 /* стилизация страницы портфолио */
 /* filter list */
 /* our projects */
@@ -658,3 +654,51 @@ a {
   border-top: 1px solid #ececec;
 }
 /* form-footer */
+.subscribe-main {
+  padding-top: 72px;
+  padding-bottom: 94px;
+  width: 570px;
+  height: 86px;
+}
+.form-footer {
+  display: flex;
+  margin-top: 20px;
+}
+.input-footer {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding: 15px 16px;
+  color: var(--secondary-title-font-color);
+}
+.input-footer:focus {
+  color: var(--secondary-title-font-color);
+}
+.btn-footer {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.mail-btn-svg-footer {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
