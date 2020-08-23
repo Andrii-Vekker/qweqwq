@@ -1,22 +1,61 @@
+.header {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.menu-wrapper {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.menu-wrapper.is-open {
+  display: block;
+}
+.menu-button-mobile {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  line-height: 0;
+  &.is-open {
+    .icon-close {
+      display: block;
+      fill: $accent-color;
+    }
+    .icon-burger {
+      display: none;
+    }
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-close {
+  display: none;
+}
 .logo-header {
   font-family: Raleway;
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.666;
+  letter-spacing: 0.03em;
   color: $main-title-font-color;
-  margin-right: 85px;
-  padding-top: 24px;
-  padding-bottom: 25px;
   span {
     color: $accent-color;
   }
 }
 .list-nav-item-link {
-  display: block;
+  height: 33px;
   transition: color 250ms $transition-timing-function;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  @include font(500, 14px, 1.14, 0.02);
+  @include font(500, 14px, 1.166, 0.02);
   color: $main-title-font-color;
   &:hover::after {
     content: "";
@@ -27,7 +66,7 @@
 .list-nav-item .current {
   color: $accent-color;
   position: relative;
-  display: block;
+  display: inline-block;
 }
 .current::after {
   content: "";
@@ -40,49 +79,37 @@
   border-radius: 2px;
   background-color: $accent-color;
 }
-nav {
-  display: flex;
-  align-items: center;
-}
 .list-nav {
-  display: flex;
   & a:hover,
   & a:focus {
     color: $accent-color;
   }
   &-item:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 40px;
   }
 }
-/* contacts */
-
 .adress {
-  margin-left: auto;
   font-style: normal;
 }
 .list-adress {
-  display: flex;
+  padding-top: 60px;
 }
-.list-adress-item {
-  display: flex;
-  align-items: center;
-  & + & {
-    margin-left: 30px;
-  }
-}
+
 .list-adress-item-link {
   transition: 250ms $transition-timing-function;
-  @include font(500, 14px, 1.14, 0.02em);
+  @include font(500, 14px, 1.166, 0.02em);
   color: $text-color;
   &:hover,
   &:focus {
     color: $accent-color;
   }
 }
+.list-adress-item + .list-adress-item {
+  margin-top: 16px;
+}
 .link-svg {
   width: 16px;
   height: 11px;
-  margin-right: 10px;
   fill: $text-color;
   text-align: center;
   .list-adress-item-link:hover &,
@@ -93,5 +120,4 @@ nav {
 .phone {
   width: 10px;
   height: 15px;
-  margin-right: 10px;
 }
