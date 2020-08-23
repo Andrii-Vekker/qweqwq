@@ -1,0 +1,66 @@
+.footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #2f303a;
+}
+.flex-container {
+  display: flex;
+}
+.contacts {
+  margin-right: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.join {
+  margin-right: 94px;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+.logo-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: $secondary-title-font-color;
+  span {
+    color: $accent-color;
+  }
+}
+.footer-container > a {
+  color: $secondary-title-font-color;
+}
+.address {
+  font-style: normal;
+  width: 231px;
+  margin-top: 20px;
+  @include font(700, 14px, 1.21em);
+  color: $secondary-title-font-color;
+}
+.address-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footer-container-item {
+  margin-left: 94px;
+  @include font(900, 14px, 1.71, 0.03em);
+  color: $secondary-title-font-color;
+}
+.our-team-list-ikon {
+  margin-top: 20px;
+}
+.our-team-list-ikon-item-link-footer {
+  @extend %center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms $transition-timing-function;
+}
+.our-team-list-ikon-item-link-svg-footer {
+  width: 20px;
+  height: 20px;
+  fill: $secondary-title-font-color;
+}
+.address-list {
+  font-style: normal;
+}

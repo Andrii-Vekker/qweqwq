@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -20,7 +20,11 @@
         <a class="logo-header" href="./index.html" lang="en"
           ><span class="list-item-web">Web</span> Studio</a
         >
-        <ul class="list-nav list">
+        <button type="button" class="menu-button"><svg>
+          <use></use>
+        </svg>
+      </button>
+        <div class="menu-wrapper"><ul class="list-nav list">
           <li class="list-nav-item">
             <a class="list-nav-item-link current" href="">Студия</a>
           </li>
@@ -35,98 +39,38 @@
         <address class="adress">
           <ul class="list-adress list">
             <li class="list-adress-item">
-              <a class="list-adress-item-link" href="mailto:info@devstudio.com"
-                ><svg class="link-svg">
-                  <use
-                    href="./pictures/sprite.svg#icon-envelopehoverheader"
-                  ></use>
+              <a class="list-adress-item-link" href="mailto:info@devstudio.com"><svg class="link-svg">
+                  <use href="./pictures/sprite.svg#icon-envelopehoverheader"></use>
                 </svg>
-                mail-info@devstudio.com</a
-              >
+                mail-info@devstudio.com</a>
             </li>
             <li class="list-adress-item">
-              <a class="list-adress-item-link" href="tel:+380961111111"
-                ><svg class="link-svg phone">
-                  <use
-                    href="./pictures/sprite.svg#icon-smartphone-header"
-                  ></use>
+              <a class="list-adress-item-link" href="tel:+380961111111"><svg class="link-svg phone">
+                  <use href="./pictures/sprite.svg#icon-smartphone-header"></use>
                 </svg>
-                +38 096 111 11 11</a
-              >
+                +38 096 111 11 11</a>
             </li>
           </ul>
         </address>
+      </div>
       </nav>
     </header>
     <main>
       <!-- hero -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="btn-service">Заказать услугу</button>
+          <button data-modal-open type="button" class="btn-service">
+            Заказать услугу
+          </button>
         </div>
-      </section>
+      </section> -->
       <!-- about us -->
-      <section class="about-us section">
-        <div class="container">
-          <h2 hidden>о нас</h2>
-          <ul class="list-about-us list">
-            <li class="list-about-us-item">
-              <div class="list-about-us-img">
-                <svg class="list-about-us-img-ikon">
-                  <use href="./pictures/sprite.svg#icon-attention"></use>
-                </svg>
-              </div>
-              <h3 class="about-us-title">Внимание к деталям</h3>
-              <p>
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li class="list-about-us-item">
-              <div class="list-about-us-img">
-                <svg class="list-about-us-img-ikon">
-                  <use href="./pictures/sprite.svg#icon-punctuality"></use>
-                </svg>
-              </div>
-              <h3 class="about-us-title">Пунктуальность</h3>
-              <p>
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li class="list-about-us-item">
-              <div class="list-about-us-img">
-                <svg class="list-about-us-img-ikon">
-                  <use href="./pictures/sprite.svg#icon-planing"></use>
-                </svg>
-              </div>
-              <h3 class="about-us-title">Планирование</h3>
-              <p>
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li class="list-about-us-item">
-              <div class="list-about-us-img">
-                <svg class="list-about-us-img-ikon">
-                  <use href="./pictures/sprite.svg#icon-nrw-technology"></use>
-                </svg>
-              </div>
-              <h3 class="about-us-title">Современные технологии</h3>
-              <p>
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
       <!-- what we do -->
-      <section class="what-we-do section">
+      <!-- <section class="what-we-do section">
         <div class="container">
           <h2 class="main-head-style">
             Чем мы занимаемся
@@ -155,209 +99,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- our team -->
-      <section class="our-team section">
-        <div class="container">
-          <h2 class="main-head-style">Наша команда</h2>
-          <ul class="our-team-list list">
-            <li class="our-team-list-item">
-              <img
-                src="./pictures/николай-кучеренко.jpg"
-                alt="николай кучеренко"
-              />
-              <h3 class="our-team-secondary-title">Николай Кучеренко</h3>
-              <p lang="en">Product Designer</p>
-              <ul class="our-team-list-ikon list">
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://instagram.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-insta"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://twitter.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://facebook.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://linkedin.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-social-IN"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="our-team-list-item">
-              <img src="./pictures/ольга-иванова.jpg" alt="Ольга Иванова" />
-              <h3 class="our-team-secondary-title">Ольга Иванова</h3>
-              <p lang="en">Frontend developer</p>
-              <ul class="our-team-list-ikon list">
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://instagram.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-insta"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://twitter.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://facebook.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://linkedin.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-social-IN"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="our-team-list-item">
-              <img src="./pictures/андрей-шевченко.jpg" alt="андрей шевченко" />
-              <h3 class="our-team-secondary-title">Aндрей Шевченко</h3>
-              <p lang="en">Marketing</p>
-              <ul class="our-team-list-ikon list">
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://instagram.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-insta"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://twitter.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://facebook.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://linkedin.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-social-IN"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="our-team-list-item">
-              <img src="./pictures/иван-николаев.jpg" alt="Иван Николаев" />
-              <h3 class="our-team-secondary-title">Иван Николаев</h3>
-              <p>UI Designer</p>
-              <ul class="our-team-list-ikon list">
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://instagram.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-insta"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://twitter.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-twitter-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://facebook.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-facebook-1"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="our-team-list-ikon-item">
-                  <a
-                    class="our-team-list-ikon-item-link"
-                    href="https://linkedin.com"
-                  >
-                    <svg class="our-team-list-ikon-item-link-svg">
-                      <use href="./pictures/sprite.svg#icon-social-IN"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </section>
       <!-- regular customers -->
-      <section class="regular customers section">
+      <!-- <section class="regular customers section">
         <div class="container">
           <h2 class="main-head-style">
             Постоянные клиенты
@@ -426,94 +171,8 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!-- footer -->
-    <footer class="footer">
-      <div class="container flex-container">
-        <div class="contacts">
-          <a class="logo-footer" href="./index.html" lang="en"
-            ><span class="list-item-web">Web</span> Studio</a
-          >
-          <address class="address">
-            <ul class="address-list list">
-              <li class="location address-list-item">
-                г. Киев, пр-т Леси Украинки, 26
-              </li>
-              <li class="address-list-item">
-                <a class="list-adress-item-link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-              <li class="address-list-item">
-                <a
-                  class="list-adress-item-link"
-                  href="mailto:info@example.com"
-                  lang="en"
-                >
-                  info@example.com</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="join">
-          <b class="join-in head-style">Присоединяйтесь</b>
-          <ul class="our-team-list-ikon list">
-            <li class="our-team-list-ikon-item">
-              <a
-                class="our-team-list-ikon-item-link our-team-list-ikon-item-link-footer"
-                href="https://instagram.com"
-              >
-                <svg class="our-team-list-ikon-item-link-svg-footer">
-                  <use href="./pictures/sprite.svg#icon-insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="our-team-list-ikon-item">
-              <a
-                class="our-team-list-ikon-item-link our-team-list-ikon-item-link-footer"
-                href="https://twitter.com"
-              >
-                <svg class="our-team-list-ikon-item-link-svg-footer">
-                  <use href="./pictures/sprite.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="our-team-list-ikon-item">
-              <a
-                class="our-team-list-ikon-item-link our-team-list-ikon-item-link-footer"
-                href="https://facebook.com"
-              >
-                <svg class="our-team-list-ikon-item-link-svg-footer">
-                  <use href="./pictures/sprite.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="our-team-list-ikon-item">
-              <a
-                class="our-team-list-ikon-item-link our-team-list-ikon-item-link-footer"
-                href="https://linkedin.com"
-              >
-                <svg class="our-team-list-ikon-item-link-svg-footer">
-                  <use href="./pictures/sprite.svg#icon-social-IN"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="subscribe-main">
-          <b class="subscribe head-style">Подпишитесь на рассылку</b>
-          <form action="#" class="form-footer">
-            <input type="email" class="input-footer" placeholder="E-mail" />
-            <button type="submit" class="btn-footer">
-              Подписаться
-              <svg class="mail-btn-svg-footer" width="24" height="24">
-                <use href="./pictures/sprite.svg#icon-icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

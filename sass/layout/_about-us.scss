@@ -1,0 +1,32 @@
+.list-about-us {
+  display: flex;
+  p {
+    @include font(700, 14px, 1.71, 0.03em);
+    color: $text-color;
+  }
+  li {
+    width: 270px;
+  }
+}
+.list-about-us-item:not(:last-child) {
+  margin-right: 30px;
+}
+.list-about-us-img {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.list-about-us-img-ikon {
+  @extend %center;
+  width: 70px;
+  height: 70px;
+}
+.about-us-title {
+  margin-bottom: 10px;
+  @include font(700, 14px, 1.71, 0.03em);
+  color: $main-title-font-color;
+  text-transform: uppercase;
+}

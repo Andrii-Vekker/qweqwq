@@ -9,9 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
-
   <body>
     <!-- header -->
     <header class="header container">
@@ -92,8 +91,8 @@
         <!-- our projects -->
         <ul class="our-projects list">
           <li class="our-projects-list-item">
-            <a href="" class="techno-link">
-              <div class="portfolio-wrapper">
+            <a href="" class="techno-link"
+              ><div class="portfolio-wrapper">
                 <img
                   src="./pictures/portfolio-1.jpg"
                   alt="технокряк"
@@ -350,6 +349,15 @@
         </div>
         <div class="subscribe-main">
           <b class="subscribe head-style">Подпишитесь на рассылку</b>
+          <form action="#" class="form-footer">
+            <input type="email" class="input-footer" placeholder="E-mail" />
+            <button type="submit" class="btn-footer">
+              Подписаться
+              <svg class="mail-btn-svg-footer" width="24" height="24">
+                <use href="./pictures/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

@@ -1,0 +1,97 @@
+.logo-header {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: $main-title-font-color;
+  margin-right: 85px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  span {
+    color: $accent-color;
+  }
+}
+.list-nav-item-link {
+  display: block;
+  transition: color 250ms $transition-timing-function;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include font(500, 14px, 1.14, 0.02);
+  color: $main-title-font-color;
+  &:hover::after {
+    content: "";
+    background-color: $accent-color;
+    transform: scale(1);
+  }
+}
+.list-nav-item .current {
+  color: $accent-color;
+  position: relative;
+  display: block;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $accent-color;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+.list-nav {
+  display: flex;
+  & a:hover,
+  & a:focus {
+    color: $accent-color;
+  }
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+/* contacts */
+
+.adress {
+  margin-left: auto;
+  font-style: normal;
+}
+.list-adress {
+  display: flex;
+}
+.list-adress-item {
+  display: flex;
+  align-items: center;
+  & + & {
+    margin-left: 30px;
+  }
+}
+.list-adress-item-link {
+  transition: 250ms $transition-timing-function;
+  @include font(500, 14px, 1.14, 0.02em);
+  color: $text-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.link-svg {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: $text-color;
+  text-align: center;
+  .list-adress-item-link:hover &,
+  .list-adress-item-link:focus & {
+    fill: $accent-color;
+  }
+}
+.phone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}
