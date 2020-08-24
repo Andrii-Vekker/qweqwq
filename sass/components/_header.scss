@@ -2,8 +2,8 @@
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ececec;
-  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
 }
 .menu-wrapper {
   position: absolute;
@@ -124,4 +124,6 @@
 .phone {
   width: 10px;
   height: 15px;
+}
+@media screen and (min-width: 480px) {
 }
