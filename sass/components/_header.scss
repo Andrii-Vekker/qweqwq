@@ -2,9 +2,10 @@
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+  width: 100%;
 }
 .menu-wrapper {
-  display: none;
   position: absolute;
   left: 0;
   top: 100%;
@@ -12,10 +13,13 @@
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  transform: translateY(-117%);
+  transition: all 250ms $transition-timing-function;
+  &.is-open {
+    transform: translateY(0);
+  }
 }
-.menu-wrapper.is-open {
-  display: block;
-}
+
 .menu-button-mobile {
   background-color: transparent;
   border: none;
