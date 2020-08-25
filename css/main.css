@@ -637,6 +637,9 @@ a {
   .adress {
     margin-left: 84px;
   }
+  .list-adress-item + .list-adress-item {
+    margin-top: 16px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -667,6 +670,7 @@ a {
   }
   .list-adress-item + .list-adress-item {
     margin-left: 30px;
+    margin-top: 0;
   }
   .list-adress-item-link {
     font-weight: 500;
