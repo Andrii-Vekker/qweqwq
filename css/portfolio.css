@@ -586,7 +586,7 @@ a {
     padding-top: 60px;
   }
   .list-adress-item + .list-adress-item {
-    margin-top: 10px;
+    margin-top: 16px;
   }
   .current::after {
     bottom: -8px;
@@ -598,12 +598,16 @@ a {
     display: none;
   }
   .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    justify-content: flex-start;
+  }
+  .logo-header {
+    margin-right: 81px;
   }
   .nav {
     justify-content: flex-start;
     display: flex;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   .menu-wrapper {
     display: flex;
@@ -615,8 +619,6 @@ a {
     line-height: 1.142;
     letter-spacing: 0.02em;
     align-items: center;
-    margin-left: 81px;
-    margin-right: 84px;
   }
   .list-nav-item:not(:last-child) {
     margin-right: 50px;
@@ -626,13 +628,19 @@ a {
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.02em;
-    display: block;
+    display: flex;
+    align-items: center;
   }
-  .list-adress-item-link + .list-adress-item-link {
+  .list-adress-item + .list-adress-item {
     margin-top: 10px;
   }
+  .link-svg {
+    margin-right: 8px;
+  }
   .adress {
+    text-align: start;
     display: flex;
+    margin-left: 84px;
   }
 }
 

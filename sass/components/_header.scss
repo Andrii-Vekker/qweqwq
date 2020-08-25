@@ -141,8 +141,6 @@
   }
   .header {
     justify-content: flex-start;
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
   .logo-header {
     margin-right: 81px;
@@ -150,6 +148,8 @@
   .nav {
     justify-content: flex-start;
     display: flex;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   .menu-wrapper {
     display: flex;
@@ -162,8 +162,16 @@
   .list-nav-item:not(:last-child) {
     margin-right: 50px;
   }
-  .list-adress-item-link + .list-adress-item-link {
+  .list-adress-item-link {
+    @include font(500, 12px, 1.166, 0.02em);
+    display: flex;
+    align-items: center;
+  }
+  .list-adress-item + .list-adress-item {
     margin-top: 10px;
+  }
+  .link-svg {
+    margin-right: 8px;
   }
   .adress {
     text-align: start;
