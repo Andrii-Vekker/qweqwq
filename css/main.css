@@ -586,7 +586,7 @@ a {
     padding-top: 60px;
   }
   .list-adress-item + .list-adress-item {
-    margin-top: 16px;
+    margin-top: 10px;
   }
   .current::after {
     bottom: -8px;
@@ -598,12 +598,8 @@ a {
     display: none;
   }
   .header {
-    justify-content: flex-start;
     padding-top: 21px;
     padding-bottom: 21px;
-  }
-  .logo-header {
-    margin-right: 81px;
   }
   .nav {
     justify-content: flex-start;
@@ -619,17 +615,24 @@ a {
     line-height: 1.142;
     letter-spacing: 0.02em;
     align-items: center;
+    margin-left: 81px;
+    margin-right: 84px;
   }
   .list-nav-item:not(:last-child) {
     margin-right: 50px;
+  }
+  .list-adress-item-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+    display: block;
   }
   .list-adress-item-link + .list-adress-item-link {
     margin-top: 10px;
   }
   .adress {
-    text-align: start;
     display: flex;
-    margin-left: 84px;
   }
 }
 
