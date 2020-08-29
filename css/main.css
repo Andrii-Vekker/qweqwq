@@ -382,7 +382,7 @@ a {
   text-decoration: inherit;
 }
 
-.list-about-us-img-ikon, .our-team-list-ikon, .our-team-list-ikon-item-link, .regular-customers-list-item, .regular-customers-list-item-link, .backdrop, .our-team-list-ikon-item-link-footer {
+.list-about-us-img, .our-team-list-ikon, .our-team-list-ikon-item-link, .regular-customers-list-item, .regular-customers-list-item-link, .backdrop, .our-team-list-ikon-item-link-footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -434,8 +434,8 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .header {
@@ -522,6 +522,7 @@ a {
 .link-svg {
   width: 16px;
   height: 11px;
+  margin-right: 10px;
   fill: #757575;
   text-align: center;
 }
@@ -699,7 +700,7 @@ a {
   height: 400px;
   padding-top: 118px;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../sass/pictures/mobile/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../pictures/mobile/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -731,19 +732,19 @@ a {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 320px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../sass/pictures/mobile/hero@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../pictures/mobile/hero@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../sass/pictures/tab/hero.jpg);
+    background-image: url(../pictures/tab/hero.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx), screen and (min-width: 768px) and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../sass/pictures/tab/hero@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../pictures/tab/hero@2x.jpg);
   }
 }
 
@@ -757,13 +758,13 @@ a {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../sass/pictures/desktop/hero.jpg);
+    background-image: url(../pictures/desktop/hero.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx), screen and (min-width: 1200px) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../sass/pictures/desktop/hero@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../pictures/desktop/hero@2x.jpg);
   }
 }
 
@@ -783,7 +784,7 @@ a {
 }
 
 .list-about-us {
-  display: flex;
+  display: block;
 }
 
 .list-about-us p {
@@ -794,18 +795,8 @@ a {
   color: #757575;
 }
 
-.list-about-us li {
-  width: 270px;
-}
-
-.list-about-us-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .list-about-us-img {
-  width: 270px;
   height: 120px;
-  padding: 25px 100px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -817,13 +808,47 @@ a {
 }
 
 .about-us-title {
+  text-align: center;
   margin-bottom: 10px;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.142;
   letter-spacing: 0.03em;
   color: #212121;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .list-about-us-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .list-about-us-img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-about-us {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .list-about-us li {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-about-us {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: -15px;
+  }
+  .list-about-us li {
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
 }
 
 .our-team {

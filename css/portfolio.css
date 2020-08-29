@@ -434,8 +434,8 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .header {
@@ -522,6 +522,7 @@ a {
 .link-svg {
   width: 16px;
   height: 11px;
+  margin-right: 10px;
   fill: #757575;
   text-align: center;
 }
