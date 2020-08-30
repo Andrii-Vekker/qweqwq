@@ -825,26 +825,12 @@ a {
 }
 
 .footer {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
   background: #2f303a;
 }
 
-.flex-container {
-  display: flex;
-}
-
 .contacts {
-  margin-right: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.join {
-  margin-right: 94px;
-  padding-top: 72px;
-  padding-bottom: 100px;
 }
 
 .logo-footer {
@@ -879,7 +865,6 @@ a {
 }
 
 .footer-container-item {
-  margin-left: 94px;
   font-weight: 900;
   font-size: 14px;
   line-height: 1.71;
