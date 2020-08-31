@@ -17,6 +17,7 @@
   color: $secondary-title-font-color;
 }
 .address {
+  text-align: center;
   font-style: normal;
   margin-top: 20px;
   margin-bottom: 60px;
@@ -53,6 +54,7 @@
 .join-in {
   display: block;
   text-align: center;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 767px) {
   .logo-footer {
@@ -60,9 +62,6 @@
     text-align: center;
   }
   .join {
-    text-align: center;
-  }
-  .address {
     text-align: center;
   }
   .our-team-list-ikon-footer {
@@ -74,54 +73,7 @@
   .join-footer {
     margin-right: 89px;
   }
-  .footer {
-    background: #2f303a;
-  }
   .flex-container {
     display: block;
-  }
-  .logo-footer {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    color: $secondary-title-font-color;
-    span {
-      color: $accent-color;
-    }
-  }
-  .footer-container > a {
-    color: $secondary-title-font-color;
-  }
-  .address {
-    font-style: normal;
-    margin-top: 20px;
-    @include font(700, 14px, 1.21em);
-    color: $secondary-title-font-color;
-  }
-  .address-list-item:not(:last-child) {
-    margin-bottom: 9px;
-  }
-  .footer-container-item {
-    @include font(900, 14px, 1.71, 0.03em);
-    color: $secondary-title-font-color;
-  }
-  .our-team-list-ikon-footer {
-    margin-top: 20px;
-  }
-  .our-team-list-ikon-item-link-footer {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms $transition-timing-function;
-  }
-  .our-team-list-ikon-item-link-svg-footer {
-    width: 20px;
-    height: 20px;
-    fill: $secondary-title-font-color;
-  }
-  .address-list {
-    font-style: normal;
   }
 }

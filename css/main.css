@@ -1395,6 +1395,7 @@ a {
 }
 
 .address {
+  text-align: center;
   font-style: normal;
   margin-top: 20px;
   margin-bottom: 60px;
@@ -1442,6 +1443,7 @@ a {
 .join-in {
   display: block;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1450,9 +1452,6 @@ a {
     text-align: center;
   }
   .join {
-    text-align: center;
-  }
-  .address {
     text-align: center;
   }
   .our-team-list-ikon-footer {
@@ -1465,61 +1464,8 @@ a {
   .join-footer {
     margin-right: 89px;
   }
-  .footer {
-    background: #2f303a;
-  }
   .flex-container {
     display: block;
-  }
-  .logo-footer {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    color: #ffffff;
-  }
-  .logo-footer span {
-    color: #2196f3;
-  }
-  .footer-container > a {
-    color: #ffffff;
-  }
-  .address {
-    font-style: normal;
-    margin-top: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.21em;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-  }
-  .address-list-item:not(:last-child) {
-    margin-bottom: 9px;
-  }
-  .footer-container-item {
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-  }
-  .our-team-list-ikon-footer {
-    margin-top: 20px;
-  }
-  .our-team-list-ikon-item-link-footer {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .our-team-list-ikon-item-link-svg-footer {
-    width: 20px;
-    height: 20px;
-    fill: #ffffff;
-  }
-  .address-list {
-    font-style: normal;
   }
 }
 /*# sourceMappingURL=main.css.map */
