@@ -1082,6 +1082,7 @@ a {
 @media screen and (min-width: 767px) {
   .footer-tab {
     display: flex;
+    justify-content: space-between;
   }
 }
 
