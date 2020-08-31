@@ -891,6 +891,11 @@ a {
   font-style: normal;
 }
 
+.join-in {
+  display: block;
+  text-align: center;
+}
+
 @media screen and (max-width: 767px) {
   .logo-footer {
     display: block;
