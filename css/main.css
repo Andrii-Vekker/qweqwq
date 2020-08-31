@@ -1020,8 +1020,10 @@ a {
 }
 
 .input-footer {
+  display: block;
   width: 450px;
   height: 50px;
+  margin-bottom: 20px;
   background-color: transparent;
   border: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1067,22 +1069,20 @@ a {
 .subscribe {
   display: block;
   text-align: center;
-}
-
-@media screen and (max-width: 767px) {
-  .subscribe {
-    margin-top: 60px;
-    margin-bottom: 20px;
-  }
-  .input-footer {
-    margin-bottom: 20px;
-  }
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 767px) {
   .footer-tab {
     display: flex;
     justify-content: space-between;
+    margin-left: 75px;
+  }
+  .input-footer {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -1457,6 +1457,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .join-footer {
+    margin-right: 89px;
+  }
   .footer {
     background: #2f303a;
   }
@@ -1494,6 +1497,9 @@ a {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #ffffff;
+  }
+  .our-team-list-ikon-footer {
+    margin-top: 20px;
   }
   .our-team-list-ikon-item-link-footer {
     width: 44px;

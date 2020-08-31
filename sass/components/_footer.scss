@@ -67,6 +67,9 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .join-footer {
+    margin-right: 89px;
+  }
   .footer {
     background: #2f303a;
   }
@@ -98,6 +101,9 @@
   .footer-container-item {
     @include font(900, 14px, 1.71, 0.03em);
     color: $secondary-title-font-color;
+  }
+  .our-team-list-ikon-footer {
+    margin-top: 20px;
   }
   .our-team-list-ikon-item-link-footer {
     width: 44px;

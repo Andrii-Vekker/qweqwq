@@ -4,8 +4,10 @@
   text-align: center;
 }
 .input-footer {
+  display: block;
   width: 450px;
   height: 50px;
+  margin-bottom: 20px;
   background-color: transparent;
   border: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -47,19 +49,20 @@
 .subscribe {
   display: block;
   text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 767px) {
-  .subscribe {
-    margin-top: 60px;
-    margin-bottom: 20px;
-  }
-  .input-footer {
-    margin-bottom: 20px;
-  }
 }
 @media screen and (min-width: 767px) {
   .footer-tab {
     display: flex;
     justify-content: space-between;
+    margin-left: 75px;
+  }
+  .input-footer {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
