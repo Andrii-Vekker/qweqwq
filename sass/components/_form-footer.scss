@@ -48,3 +48,17 @@
   display: block;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .subscribe {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+  .input-footer {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .footer-tab {
+    display: flex;
+  }
+}

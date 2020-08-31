@@ -19,6 +19,7 @@
 .address {
   font-style: normal;
   margin-top: 20px;
+  margin-bottom: 60px;
   @include font(700, 14px, 1.21em);
   color: $secondary-title-font-color;
 }
@@ -29,8 +30,9 @@
   @include font(900, 14px, 1.71, 0.03em);
   color: $secondary-title-font-color;
 }
-.our-team-list-ikon {
+.our-team-list-ikon-footer {
   padding-bottom: 0;
+  @extend %center;
 }
 .our-team-list-ikon-item-link-footer {
   @extend %center;
@@ -58,21 +60,18 @@
   }
   .address {
     text-align: center;
-    .our-team-list-ikon {
-      padding-bottom: 0;
-    }
-    .our-team-list-ikon {
-      margin-top: 20px;
-      margin-bottom: 60px;
-    }
   }
-  @media screen and (min-width: 768px) {
-    .footer {
-      background: #2f303a;
-    }
-    .flex-container {
-      display: flex;
-    }
+  .our-team-list-ikon-footer {
+    padding-bottom: 0;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    background: #2f303a;
+  }
+  .flex-container {
+    display: block;
   }
   .logo-footer {
     font-family: Raleway;
@@ -114,9 +113,5 @@
   }
   .address-list {
     font-style: normal;
-  }
-  .join {
-    display: block;
-    justify-content: start;
   }
 }
