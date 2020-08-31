@@ -2,6 +2,12 @@
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contacts-footer {
+  display: block;
+  text-align: center;
 }
 .logo-footer {
   font-family: Raleway;
@@ -17,12 +23,20 @@
   color: $secondary-title-font-color;
 }
 .address {
-  text-align: center;
   font-style: normal;
   margin-top: 20px;
   margin-bottom: 60px;
   @include font(700, 14px, 1.21em);
   color: $secondary-title-font-color;
+}
+.list-address-item-link-footer {
+  transition: 250ms $transition-timing-function;
+  @include font(500, 14px, 1.166, 0.02em);
+  color: $text-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .address-list-item:not(:last-child) {
   margin-bottom: 9px;
@@ -75,5 +89,28 @@
   }
   .flex-container {
     display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    max-width: 1600px;
+  }
+  .footer-tab {
+    margin-left: 0;
+  }
+  .contacts-footer {
+    margin-right: 69px;
+    text-align: start;
+  }
+  .flex-container {
+    display: flex;
+  }
+  .contacts {
+    padding-top: 60px;
+  }
+  .join {
+    margin-right: 94px;
+    padding-top: 72px;
+    padding-bottom: 100px;
   }
 }
