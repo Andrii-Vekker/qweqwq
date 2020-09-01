@@ -756,6 +756,7 @@ a {
 }
 
 .portfolio-wrapper {
+  height: 294px;
   position: relative;
   overflow: hidden;
   display: block;
@@ -781,7 +782,12 @@ a {
 }
 
 .techno {
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
   display: block;
+  align-content: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
@@ -859,6 +865,15 @@ a {
 @media screen and (min-width: 1200px) {
   .our-projects-list-item {
     width: calc((100% - 6 * 15px) / 3);
+  }
+  .our-projects-list-item {
+    height: 404px;
+  }
+  .techno {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
   }
 }
 
