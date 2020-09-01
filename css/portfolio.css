@@ -715,6 +715,9 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .filter {
+    margin-bottom: 40px;
+  }
   .btns-1 {
     display: flex;
     margin-bottom: 15px;
@@ -728,6 +731,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+  }
   .filter-list-btns {
     display: flex;
     justify-content: center;
@@ -834,6 +840,18 @@ a {
 @media screen and (max-width: 767px) {
   .our-projects-list-item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .our-projects-list-item {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
   }
 }
 
@@ -1167,7 +1185,6 @@ a {
     margin: -15px;
   }
   .our-team-list-item {
-    margin: 15px;
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
