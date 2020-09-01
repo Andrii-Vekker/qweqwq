@@ -482,7 +482,7 @@ a {
 .list-nav-item .current {
   color: #2196f3;
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .current::after {
@@ -490,7 +490,7 @@ a {
   position: absolute;
   display: block;
   left: 0;
-  bottom: 0;
+  bottom: -32px;
   width: 100%;
   height: 4px;
   border-radius: 2px;
@@ -539,6 +539,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .header {
+    height: 80px;
     position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -590,9 +591,6 @@ a {
   .list-adress-item + .list-adress-item {
     margin-top: 16px;
   }
-  .current::after {
-    bottom: -8px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -640,11 +638,14 @@ a {
     margin-left: 84px;
   }
   .list-adress-item + .list-adress-item {
-    margin-top: 16px;
+    margin-top: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .nav {
+    height: 81px;
+  }
   .menu-button-mobile {
     display: none;
   }
@@ -983,6 +984,8 @@ a {
   }
   .footer-tab {
     margin-left: 0;
+    display: flex;
+    justify-content: space-between;
   }
   .contacts-footer {
     margin-right: 69px;
@@ -1061,13 +1064,9 @@ a {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 767px) {
-  .footer-tab {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 75px;
-  }
+@media screen and (min-width: 768px) {
   .input-footer {
+    max-width: 450px;
     display: flex;
     margin: 0 auto;
     margin-bottom: 20px;
