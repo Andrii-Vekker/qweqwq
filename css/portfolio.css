@@ -855,6 +855,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .our-projects-list-item {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
+
 .footer {
   background: #2f303a;
   padding-top: 60px;
